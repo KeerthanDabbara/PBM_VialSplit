@@ -1,0 +1,115 @@
+Sub DeleteSheet()
+Dim ws as Worksheet
+On Error Resume Next
+Set ws=Sheets("Sheet3")
+On Error Goto 0
+
+If Not ws Is Nothing Then
+  Application.DisplayAlerts=False
+  ws.Delete
+  Application.DisplayAlerts=True
+Else
+  MsgBox "Sheet3 not found"
+End If
+
+End Sub
+
+Sub DeleteSheet1()
+
+Dim ws as Worksheet
+On Error Resume Next
+Set ws=Sheets("Sheet4")
+On Error Goto 0
+
+If Not ws Is Nothing Then
+  Application.DisplayAlerts=False
+  ws.Delete
+  Application.DisplayAlerts=True
+Else
+  MsgBox "Sheet4 not found"
+End If
+
+End Sub
+
+Sub Rename()
+'
+' Rename Macro
+'
+
+'
+    Sheets("Sheet5").Select
+    Sheets("Sheet5").Name = "Sheet3"
+End Sub
+
+Sub Rename1()
+'
+' Rename Macro
+'
+
+'
+    Sheets("Sheet6").Select
+    Sheets("Sheet6").Name = "Sheet4"
+End Sub
+
+Sub ConvertToNumbers()
+'
+' ConvertToNumbers Macro
+'
+
+'   Sheets("Sheet4").Select
+    Range("A2:B2").Select
+    Range(Selection, Selection.End(xlDown)).Select
+    Sheets("Sheet3").Select
+    Range("A2").Select
+    Range(Selection, Selection.End(xlDown)).Select
+End Sub
+
+Sub Sorting()
+Application.ScreenUpdating = False
+Dim iSheets%, i%, j%
+iSheets = Sheets.Count
+For i = 1 To iSheets-1
+        For j =i + 1 to iSheets
+             If Sheets(j).Name < Sheets(i). Name Then
+                Sheets(j).Move before:=Sheets(i)
+             End if
+        Next j
+Next i
+Application.Screenupdating = True
+Sheets("Sheet2").Select
+    Range("A1").Select
+    Selection.End(xlDown).Select
+    ActiveCell.Offset(0, 1).Select
+    ActiveCell.Offset(1, 0).Select
+    Range(Selection, Selection.End(xlDown)).Select
+    Selection.ClearContents
+    Selection.End(xlUp).Select
+    Selection.End(xlUp).Select
+    Range("B1").Select
+    Selection.ClearContents
+    Range("D1").Select
+    Selection.ClearContents
+    Sheets("Sheet3").Select
+End Sub
+
+Sub Macro1()
+'
+' Macro1 Macro
+'
+
+'
+    Sheets("Sheet4").Select
+    Range("B2").Select
+    Range(Selection, Selection.End(xlDown)).Select
+    Selection.Copy
+    Sheets("Sheet2").Select
+    With ActiveSheet
+    lastRow = .Cells(.Rows.Count, "A").End(xlUp).Row
+    Range("A2").Select
+    Selection.End(xlDown).Select
+    Cells(lastRow + 1, 1).Select
+    ActiveSheet.Paste
+    Cells(lastRow + 1, 2).Select
+    ActiveSheet.Paste
+    End With
+End Sub

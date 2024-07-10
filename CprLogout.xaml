@@ -1,0 +1,200 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="CprLogout" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="653.6,696.8" sap2010:WorkflowViewState.IdRef="CprLogout_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="22">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="17">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Flowchart DisplayName="CprLogout" sap:VirtualizedContainerService.HintSize="633.6,636.8" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <Flowchart.Variables>
+      <Variable x:TypeArguments="x:Boolean" Name="loginPage" />
+    </Flowchart.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
+        <av:Size x:Key="ShapeSize">60,75.2</av:Size>
+        <av:PointCollection x:Key="ConnectorLocation">300,77.7 300,107.7 260,107.7 260,273.6</av:PointCollection>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Flowchart.StartNode>
+      <x:Reference>__ReferenceID3</x:Reference>
+    </Flowchart.StartNode>
+    <FlowStep x:Name="__ReferenceID3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">160,273.6</av:Point>
+          <av:Size x:Key="ShapeSize">200,52.8</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">260,326.4 260,348.8 270,348.8</av:PointCollection>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" ContinueOnError="True" DisplayName="Use Remote Desktop: *** CPR+ OPTUM INFUSION *** 2022 R3   Enterprise •  License # 992164  •  1234 CP" sap:VirtualizedContainerService.HintSize="433.6,967.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Never" Timeout="10" Version="V1">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,676" sap2010:WorkflowViewState.IdRef="Sequence_1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ClickType="Single" ContinueOnError="True" DelayAfter="1" DisplayName="Click 'Cancel / No Split (Esc)'" sap:VirtualizedContainerService.HintSize="333.6,167.2" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" Timeout="3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="293, 520, 187, 34" ElementType="Button" FriendlyName="'Cancel / No Split (Esc)'" FullSelectorArgument="&lt;ctrl name='Cancel / No Split (Esc)' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Cancel / No Split (Esc)' role='push button' automationid='' check:text='Cancel / No Split (Esc)' /&gt;" ImageBase64="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" InformativeScreenshot="9760ad17446ba3a0f8b48b40b91f655f.png" ScopeSelectorArgument="&lt;wnd app='cpr.exe' cls='cpr9c*' isremoteapp='1' title='Split Delivery Ticket' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Text="Cancel / No Split (Esc)" TextMethod="AttributeText" TextSelector="&lt;ctrl role='push button' /&gt;" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ClickType="Single" ContinueOnError="True" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="333.6,167.2" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" Timeout="3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="207, 152, 110, 33" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;wnd ctrlid='2' title='OK' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='2' title='OK' check:text='OK' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHIAAAAlCAYAAACeVr0yAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAALfSURBVHhe7ZshlKMwFEUrKytrKyuRWCQSiUUikbFIZCQWGRmJjYyMxFaOrHz7QodZ2unsroRsxD2dSfI5pXd+8j9zerjf74jsnygyEKLIQHgS+fHxEdkZb0VO0wStdWQn3G639yKdc/MCa21k43hPPvH+KNKbjmyXZeeMIndOFBkIUWQgRJGBEEUGQrgieUM3Z/jeFYZhmFFKQRsH5+fmdRNv3MIoDWP9+DLmYBmnRwPjlrXbJlCRlEGJri+RXi84Ho8zp/MFSaOgKHOapbH/MhLVMUXTsaF2HPMSTY82O+FaCIjBvFx7m4Qp0o4wssL1nKJse/SamWVGaCUhsgsKwbHRce13kXbkXH1F1vg4u8rebROgSL8tdpBlgqx+CPvaMpmlRpYosgaC4syLSKUG9F3NOPEZtw+JnvBETsw8KVAlGYSeYGaJyxyz0A3MyhINs1K5lUjREsY1AjW3U/+BPF1344Qn0rK4aRtk1wYDCxX3NO/lGPRlDiE69MaL7CjyijJLkRYNilbDPsXsgzBFdgJ53mHkTU1P84vIBDUzrxsXkUecDwckLG5a5avWdcw+CDcjLw36HzOyeGSk/6/BLJJiK56dOaHM3voPZh23fcITObF35BlZpzz3lGMfuJ7jGWl7NMsZyR7y64xkdSu7FqKsuMVKzr3+EWyb8EQy66yW6KuUW+Vn1TqPs3e0GkOdI8/YH8qRZ+FKpG8/xkehVOYFik5BW8Z8u/42CVAkcZTUC2RJiaqV6OYnO5Qra5SsZivB3837PtLL1l2FxGet3I/MMEV6uG3eFHvC5ILT6TRzvrA67dfb7UNkfWarIj+f7HB8sgaqPiPJK8rcRxUbrkhf2PjHbZRizALF8UZ/FzL+Z269HHcsjL7G/RpnGMs5P/503W0SsMj/iygyEKLIQIgiAyGKDIQoMhCiyED4Z5H+NbJd/vqVgcV0ZB/8KPLd17Yi2+atyMh+iSKD4I5fHJkBikKBCa0AAAAASUVORK5CYII=" InformativeScreenshot="9c17f737aadeb2142d575208b53294ac.png" ScopeSelectorArgument="&lt;wnd app='cpr.exe' cls='#32770' isremoteapp='1' title='Cancelled' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Text="OK" TextMethod="AttributeText" TextSelector="&lt;wnd /&gt;" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ClickType="Single" ContinueOnError="True" DisplayName="Click 'Exit CPR+ (9)'" sap:VirtualizedContainerService.HintSize="333.6,167.2" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" Timeout="10">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="18, 390, 250, 37" ElementType="Button" FriendlyName="'Exit CPR+ (9)'" FullSelectorArgument="&lt;ctrl name='     Exit CPR+ (9)' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='     Exit CPR+ (9)' role='push button' automationid='' check:text='Exit CPR+ (9)' /&gt;" ImageBase64="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" InformativeScreenshot="0c8d702d0397d84efe358fe5d8376286.png" ScopeSelectorArgument="&lt;wnd app='cpr.exe' cls='cpr9c*' isremoteapp='1' title='Main Menu' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Text="Exit CPR+ (9)" TextMethod="AttributeText" TextSelector="&lt;ctrl role='push button' /&gt;" />
+                </uix:NClick.Target>
+              </uix:NClick>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp FilePath="C:\Program Files\CPR_Launch_Prod\cpr.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAL0SURBVFhH7dXbS9NhGAfwNwqiAzEUgugAljdBgoHWRUgXWV5FdrNyaJHloZppaqUrkTxEmjXD1MpIzUM6ZdNSp1lqU0udbpZDjTxlluhV/8G3Pb/sh2sPc6Dd+cJnFw/b9/3+YHsmgDa3LPdwmYQdcpZ7uEzCDjkKxeYSynHHwnsdDpdJ2CGHMoZnf6HBNo/6z3OsqoGfMI3NSSXMUz+EdWZexmUSdsih0HLzDM5VjEBZbGMF5lsRW2SUCnTYvgjL9zkZl0nYIYdCCzsnEPioH/73eli+qUaEZTyTCryxDon+6VkZl0nYIYdC8zq+IuDBR/hkmlh7NfUIuf1EKtAyMCj6pmZkXCZhhxwK1b4bhV/We3invmV5JdZCmVogFTD2W0TP5DcZl0nYIYdCs1ts2JfWiu1JTaxtVypx8maeVKCxzyw+jE/IuEzCDjkUmmkchHdKEzzi61iK6FIcT86VCrzu7RVdY2MyLpOwQw6F3jFasTPpFTaqa1gbIkoQnPZUKtBtv7RvclLGZRLpxd0lk6w3Y1uiAWujXvIiynEsu4797L/oTrkADXrGp1FkGkZBu81JYYcNaQ0WBOW2QhGrg7BfxFkTWY49Gj0iXnRC2/qJzcputqJ2YEgq4VDgrtGC/emN2K2pc+KVXIcd1/XS5euiKtjLCRVYf7ESHnE67LphYLM2qatwIuO5c4Fbhl54xtWwwSsqtABHE7JWC6wWcC6grjRBnLUvEWWOs9NaiLDHEOHF9pAy59C/zpdCnLH/GakeQpy6z2cFp+FwdIpzgZxqAwIiNfAPueTkUPg1HIzTYutl+8/ngosC9gfwDEmHjyoBB1RqNstPGQVVzFXHAu5uwiBtk8s9IELz4Rv+5+mW4rAJ3UEfitd1Y0tMNX85sRc4EpcpXVBYoxNlLc0yLpOwQw6FLvlFXfQFM3R3ifbRERmXSdghZ7XAagEKdbmsyKIlo/8fBVwtK7J4yax4AXeXFVl4r8PhMgk75Cz3cJlAm/gNv2mh7NsUB54AAAAASUVORK5CYII=" InformativeScreenshot="c2a09fff5be562df823193485b8ecda4.png" Selector="&lt;wnd app='cpr.exe' cls='cpr9c*' isremoteapp='1' title='*** CPR+ OPTUM INFUSION *** 2022 R3   Enterprise •  License # 99*'/&gt;" />
+        </uix:NApplicationCard.TargetApp>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </uix:NApplicationCard>
+      <FlowStep.Next>
+        <FlowStep x:Name="__ReferenceID0">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <av:Point x:Key="ShapeLocation">170,348.8</av:Point>
+              <av:Size x:Key="ShapeSize">200,22.4</av:Size>
+              <av:PointCollection x:Key="ConnectorLocation">270,371.2 270,401.2 280,401.2 280,413.6</av:PointCollection>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:KillProcess Process="{x:Null}" ContinueOnError="True" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="Chrome">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:KillProcess>
+          <FlowStep.Next>
+            <FlowStep x:Name="__ReferenceID1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <av:Point x:Key="ShapeLocation">180,413.6</av:Point>
+                  <av:Size x:Key="ShapeSize">200,52.8</av:Size>
+                  <av:PointCollection x:Key="ConnectorLocation">280,466.4 280,496.4 290,496.4 290,503.6</av:PointCollection>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:UiElementExists DisplayName="Element Exists 'wfica32.exe Log'" Exists="[loginPage]" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+                <ui:UiElementExists.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="36f069ce-dc03-4a73-a198-c1290aef77e0" InformativeScreenshot="6e5188f0a63d63f55359496a73601ae8" Selector="&lt;wnd app='wfica32.exe' cls='Transparent Windows Client' title='Log On To CPR+ - \\Remote' /&gt;" TimeoutMS="5000">
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:UiElementExists.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:UiElementExists>
+              <FlowStep.Next>
+                <FlowStep x:Name="__ReferenceID2">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <av:Point x:Key="ShapeLocation">190,503.6</av:Point>
+                      <av:Size x:Key="ShapeSize">200,52.8</av:Size>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <If Condition="[loginPage]" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="If_1">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <If.Then>
+                      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'push button'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition Position="Center">
+                            <ui:CursorPosition.OffsetX>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetX>
+                            <ui:CursorPosition.OffsetY>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetY>
+                          </ui:CursorPosition>
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0c207c6c-d59f-4416-8b3d-336ce9bcf8c0" InformativeScreenshot="864da4b2f38d9937205e644473897026" Selector="&lt;wnd app='cpr.exe' cls='cpr*' isremoteapp='1' title='Log On To CPR+' /&gt;&lt;ctrl name='Cancel (Esc)' role='push button' /&gt;">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:Click.Target>
+                      </ui:Click>
+                    </If.Then>
+                  </If>
+                </FlowStep>
+              </FlowStep.Next>
+            </FlowStep>
+          </FlowStep.Next>
+        </FlowStep>
+      </FlowStep.Next>
+    </FlowStep>
+    <x:Reference>__ReferenceID0</x:Reference>
+    <x:Reference>__ReferenceID1</x:Reference>
+    <x:Reference>__ReferenceID2</x:Reference>
+  </Flowchart>
+</Activity>
